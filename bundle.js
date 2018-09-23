@@ -4,11 +4,7 @@
 var measureScrollbar = (function () {
   const div = document.createElement('div');
 
-  div.style.width = '100px';
-  div.style.height = '100px';
-  div.style.overflow = 'scroll';
-  div.style.position = 'absolute';
-  div.style.top = '-9999px';
+  div.style.cssText = "width: 100px; height: 100px; overflow: scroll; position: absolute; top: -9999px;";
 
   document.body.appendChild(div);
 
